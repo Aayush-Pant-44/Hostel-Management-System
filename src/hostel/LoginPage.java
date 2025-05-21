@@ -151,15 +151,10 @@ try {
 
     private void lblSignupMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSignupMouseClicked
         lblSignup.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-lblSignup.addMouseListener(new java.awt.event.MouseAdapter() {
-    @Override
-    public void mouseClicked(java.awt.event.MouseEvent evt) {
+       
         new SignupForm().setVisible(true); // open signup
-        dispose(); // close login
-    }
-});
-
-// TODO add your handling code here:
+        this.dispose(); // close login
+    
     }//GEN-LAST:event_lblSignupMouseClicked
 
     private void cmbRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRoleActionPerformed

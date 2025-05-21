@@ -216,19 +216,13 @@ public class SignupForm extends javax.swing.JFrame {
 
     private void lblLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLoginMouseClicked
        lblLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        new LoginPage().setVisible(true);
+        this.dispose(); 
  // TODO add your handling code here:
     }//GEN-LAST:event_lblLoginMouseClicked
 
     private void lblLoginMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLoginMouseEntered
-       lblLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR)); 
-            lblLogin.addMouseListener(new java.awt.event.MouseAdapter() {
-  @Override
-  public void mouseClicked(java.awt.event.MouseEvent evt) {
-      new LoginPage().setVisible(true);  // Open LoginPage
-      dispose();                         // Close SignupPage
-  }
-});
-
+      
     }//GEN-LAST:event_lblLoginMouseEntered
 
     /**
